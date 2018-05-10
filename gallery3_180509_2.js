@@ -4,7 +4,7 @@ var size;
 
 function setup() {
   frameRate(200000);
-  img1=loadImage('img1.jpg');
+  img1=loadImage("img1.jpg");
   
   createCanvas(700,543);
   background(0);
