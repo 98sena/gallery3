@@ -35,4 +35,7 @@ function keyPressed(){
   else if(keyCode==DOWN_ARROW){
     size-=1;
   }
+  else if(key=='a'){
+    size=80;
+  }
 }
