@@ -3,7 +3,7 @@ var img1;
 var size;
 
 function setup() {
-  frameRate(200000);
+  frameRate(500000);
   img1=loadImage("img1.jpg");
   
   createCanvas(700,543);
@@ -13,11 +13,10 @@ function setup() {
 }
 
 function draw() {
-
+    noStroke();
     for(var y=0;y<img1.height;y+=10){
     for(var x=0;x<img1.width;x+=10){
       var c = img1.get(x,y);
-      noStroke();
       if( dist(mouseX,mouseY,x+5,y+5)<size){
         fill(c);
         ellipse(x+5,y+5,10,10);
