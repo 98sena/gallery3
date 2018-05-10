@@ -14,15 +14,7 @@ function setup() {
 
 function draw() {
   if(type==0){
-    bloodPixels();
-  }
-  else{
-    watchPixels();
-  }
-}
-
-function bloodPixels(){
-  for(var k=0; k<500; k+=1) {
+    for(var k=0; k<500; k+=1) {
       var x =random(width);
       var y =random(height);
       var c = img1.get(int(x),int(y));
@@ -30,9 +22,9 @@ function bloodPixels(){
       noStroke();
       ellipse(x,y,10,10);
     }
-}
-function watchPixels(){
-  for(var y=0;y<img1.height;y+=10){
+  }
+  else{
+    for(var y=0;y<img1.height;y+=10){
     for(var x=0;x<img1.width;x+=10){
       var c = img1.get(x,y);
       noStroke();
@@ -46,7 +38,9 @@ function watchPixels(){
       }
     }
   }
+  }
 }
+
 
 function mousePressed(){
   if(type ==0){
